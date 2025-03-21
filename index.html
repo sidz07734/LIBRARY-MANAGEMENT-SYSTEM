@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1> 2025 - Library Management System</h1>
+        </header>
+
+        <!-- Add/Remove/Update Book Section -->
+        <section class="book-management">
+            <h2>Book Management</h2>
+            <form id="book-form">
+                <input type="text" id="book-title" placeholder="Book Title" required>
+                <input type="text" id="book-author" placeholder="Author" required>
+                <input type="text" id="book-isbn" placeholder="ISBN" required>
+                <button type="submit">Add Book</button>
+            </form>
+            <ul id="book-list"></ul>
+        </section>
+
+        <!-- Search and Borrow Books Section -->
+        <section class="search-books">
+            <h2>Search & Borrow Books</h2>
+            <input type="text" id="search-title" placeholder="Search by Title, Author, or ISBN">
+            <button id="search-btn">Search</button>
+            <ul id="search-results"></ul>
+        </section>
+
+        <!-- User Management Section -->
+        <section class="user-management">
+            <h2>User Management</h2>
+            <input type="text" id="user-id" placeholder="User ID" required>
+            <input type="text" id="user-name" placeholder="User Name" required>
+            <button id="add-user-btn">Add User</button>
+            <ul id="user-list"></ul>
+        </section>
+
+        
+        <!-- Borrow Books Section -->
+        <section class="borrow-books">
+            <h2>Borrow Book</h2>
+            <input type="text" id="borrow-isbn" placeholder="Enter ISBN to Borrow" required>
+            <input type="date" id="due-date" placeholder="Due Date" required>
+            <button id="borrow-btn">Borrow Book</button>
+        </section>
+
+
+        <!-- Return Books Section -->
+        <section class="return-books">
+            <h2>Return Books</h2>
+            <input type="text" id="return-isbn" placeholder="Enter ISBN to Return">
+            <button id="return-btn">Return Book</button>
+        </section>
+
+        <!-- Issue Management (Overdue) Section -->
+        <section class="overdue-books">
+            <h2>Overdue Books</h2>
+            <button id="overdue-btn">Show Overdue Books</button>
+            <ul id="overdue-list"></ul>
+        </section>
+    </div>
+
+    <script src="static/script.js"></script>
+</body>
+</html>
